@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+
+  display: grid;
+  place-items: center;
+}
+
+body * {
+  font-family: "Rubik";
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+#boarding-pass main {
+  width: 327px;
+  height: 544px;
+
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+
+  border-radius: 24px;
+}
+
+#flight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  background: #fff;
+  background: linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
+    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      rgba(0, 0, 0, 0) 14px,
+      #fff 15px
+    ),
+    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 14px, #fff 15px);
+
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+
+  padding: 24px 32px;
+}
+
+#flight-info .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#flight-info .container .date {
+  text-align: right;
+}
+
+#flight-info .container p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(0, 0, 0, 0.88);
+}
+
+#flight-info .container p sup {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#flight-info .container .departure p.airport,
+#flight-info .container .arrival p.airport {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: rgba(0, 0, 0, 0.88);
+}
+
+#flight-info .container > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+#flight-info .container .departure {
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#flight-info .container .arrival {
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#flight-info .container .departure p,
+#flight-info .container .arrival p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#passanger-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  background: #fff;
+  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
+    linear-gradient(225deg, transparent 10px, #fff 0) top right,
+    linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
+    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 0 0,
+      rgba(0, 0, 0, 0) 14px,
+      #fff 15px
+    ),
+    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 14px, #fff 15px),
+    radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 14px, #fff 15px),
+    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 14px, #fff 15px);
+
+  padding: 24px 32px;
+}
+
+#passanger-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+#passanger-info .seat {
+  text-align: right;
+}
+
+#passanger-info .divider1,
+#passanger-info .divider2 {
+  position: absolute;
+  width: 300px;
+  height: 0px;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+}
+
+#passanger-info .divider1 {
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+#passanger-info .divider2 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#boarding-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  background: #fff;
+  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
+    linear-gradient(225deg, transparent 10px, #fff 0) top right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 0 0,
+      rgba(0, 0, 0, 0) 14px,
+      #fff 15px
+    ),
+    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 14px, #fff 15px);
+
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+  padding: 24px 32px;
+}
+
+#boarding-info > p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#boarding-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#boarding-info .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+#boarding-info .container .info .boarding-time {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  background: #633bbc;
+  border-radius: 8px;
+
+  padding: 4px 8px;
+}
+
+#boarding-info .container .info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(0, 0, 0, 0.88);
+}
+
+#boarding-info .container .qrcode {
+  display: grid;
+  place-items: center;
+}
+
+#boarding-pass footer {
+  width: 269.14px;
+  margin: auto;
+}
+
+#boarding-pass footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  opacity: 0.64;
+
+  margin-top: 20px;
+}
+
+#teste {
+  width: 100px;
+  height: 100px;
+
+  background: #fff;
+  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
+    linear-gradient(225deg, transparent 10px, #fff 0) top right,
+    linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
+    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+
+  background-image: radial-gradient(
+      circle at 0 0,
+      rgba(0, 0, 0, 0) 12px,
+      #fff 15px
+    ),
+    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 12px, #fff 15px),
+    radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 12px, #fff 15px),
+    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 12px, #fff 15px);
+}
