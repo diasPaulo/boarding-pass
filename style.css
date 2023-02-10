@@ -52,18 +52,10 @@ h2 {
   flex-direction: column;
   gap: 24px;
 
+  --mask: radial-gradient(12px at 12px 100%, transparent 98%, #fff) -12px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
   background: #fff;
-  background: linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
-    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
-  background-size: 50%;
-  background-repeat: no-repeat;
-
-  background-image: radial-gradient(
-      circle at 100% 100%,
-      rgba(0, 0, 0, 0) 14px,
-      #fff 15px
-    ),
-    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 14px, #fff 15px);
 
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -140,22 +132,10 @@ h2 {
   display: flex;
   justify-content: space-between;
 
+  --mask: radial-gradient(12px at 12px 12px, transparent 98%, #fff) -12px -12px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
   background: #fff;
-  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
-    linear-gradient(225deg, transparent 10px, #fff 0) top right,
-    linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
-    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-
-  background-image: radial-gradient(
-      circle at 0 0,
-      rgba(0, 0, 0, 0) 14px,
-      #fff 15px
-    ),
-    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 14px, #fff 15px),
-    radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 14px, #fff 15px),
-    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 14px, #fff 15px);
 
   padding: 24px 32px;
 }
@@ -197,18 +177,10 @@ h2 {
   flex-direction: column;
   gap: 24px;
 
+  --mask: radial-gradient(12px at 12px 0, transparent 98%, #fff) -12px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
   background: #fff;
-  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
-    linear-gradient(225deg, transparent 10px, #fff 0) top right;
-  background-size: 50%;
-  background-repeat: no-repeat;
-
-  background-image: radial-gradient(
-      circle at 0 0,
-      rgba(0, 0, 0, 0) 14px,
-      #fff 15px
-    ),
-    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 14px, #fff 15px);
 
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -273,30 +245,7 @@ h2 {
   line-height: 24px;
 
   color: #ffffff;
-
   opacity: 0.64;
 
   margin-top: 20px;
-}
-
-#teste {
-  width: 100px;
-  height: 100px;
-
-  background: #fff;
-  background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
-    linear-gradient(225deg, transparent 10px, #fff 0) top right,
-    linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
-    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-
-  background-image: radial-gradient(
-      circle at 0 0,
-      rgba(0, 0, 0, 0) 12px,
-      #fff 15px
-    ),
-    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 12px, #fff 15px),
-    radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 12px, #fff 15px),
-    radial-gradient(circle at 0 100%, rgba(0, 0, 0, 0) 12px, #fff 15px);
 }
